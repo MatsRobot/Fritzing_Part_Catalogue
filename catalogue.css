@@ -1,63 +1,30 @@
-/* --/*--- THE GRID CONTAINER --- */
-#catalogue-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Exactly 3 columns */
-    gap: 1.5rem;
-    margin-top: 2rem;
+/* --- VARIABLES --- */
+:root {
+    --gh-blue: #0366d6;
+    --gh-green: #2ea44f;
+    --gh-green-hover: #2c974b;
+    --gh-border: #e1e4e8;
+    --gh-bg-gray: #f6f8fa;
+    --gh-text: #24292e;
 }
 
-/* --- THE CARD STYLE (Matches your MatsRobot aesthetic) --- */
-.catalogue-card {
-    border: 1px solid var(--gh-border);
-    border-radius: 8px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: transform 0.2s, box-shadow 0.2s;
+/* --- MAIN LAYOUT --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--gh-text);
+    line-height: 1.5;
+    margin: 0;
+    padding: 2rem;
+    background-color: #ffffff;
 }
 
-.catalogue-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transform: translateY(-2px);
-}
-
-.card-image {
-    background-color: #fff;
-    border-bottom: 1px solid var(--gh-border);
-    padding: 15px;
+.main-header {
+    max-width: 1012px;
+    margin: 0 auto 2rem auto;
     text-align: center;
-    height: 160px; /* Keeps images consistent */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.card-image img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.card-content {
-    padding: 1rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-content h3 {
-    font-size: 1rem;
-    margin: 0 0 0.5rem 0;
-    color: var(--gh-blue);
-}
-
-.card-content p {
-    font-size: 0.85rem;
-    color: #586069;
-    margin-bottom: 1rem;
-    flex-grow: 1; /* Pushes button to bottom */
-}
+/* --- SEARCH SECTION --- */
 .search-section {
     margin-bottom: 2rem;
     display: flex;
@@ -78,56 +45,6 @@
     fill: #586069;
 }
 
-.source-credit {
-    font-size: 0.75rem;
-    color: #6a737d;
-    margin-bottom: 8px;
-    font-style: italic;
-}
-
-.source-credit a {
-    color: var(--gh-blue);
-    text-decoration: none;
-}
-
-.source-credit a:hover {
-    text-decoration: underline;
-}
-
-
-/* Styling the Download button */
-.btn-download {
-    background-color: var(--gh-green); /* GitHub Green */
-    color: #ffffff !important; /* Force white text */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-align: center;
-    border: 1px solid rgba(27, 31, 35, 0.15);
-    transition: background-color 0.2s;
-    margin-top: auto; /* Pushes button to bottom of card */
-}
-
-.btn-download:hover {
-    background-color: var(--gh-green-hover);
-    text-decoration: none;
-}
-
-/* Specific styling for external links if you want them blue instead */
-.btn-external {
-    background-color: var(--gh-blue);
-}
-
-.btn-external:hover {
-    background-color: #0256b9;
-}
-
-
-
-
 #part-search {
     width: 100%;
     padding: 10px 12px 10px 35px;
@@ -146,17 +63,125 @@
     box-shadow: 0 0 0 3px rgba(3,102,214,0.3);
 }
 
-/* Compact Button for Grid */
-.btn-download {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+/* --- THE GRID CONTAINER --- */
+#catalogue-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1012px;
+    margin: 0 auto;
+}
+
+/* --- THE CARD STYLE --- */
+.catalogue-card {
+    border: 1px solid var(--gh-border);
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.catalogue-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.card-image {
+    background-color: #fff;
+    border-bottom: 1px solid var(--gh-border);
+    padding: 15px;
+    height: 180px; 
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-/* RESPONSIVE: Switch to 2 columns on tablets, 1 on mobile */
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-content {
+    padding: 1.25rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--gh-text);
+}
+
+.source-credit {
+    font-size: 0.75rem;
+    color: #6a737d;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.source-credit a {
+    color: var(--gh-blue);
+    text-decoration: none;
+}
+
+.card-content p {
+    font-size: 0.85rem;
+    color: #586069;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* --- BUTTON STYLES (Fixed to always show color) --- */
+.btn-download {
+    background-color: #2ea44f !important; /* GitHub Green */
+    color: #ffffff !important;
+    padding: 10px 20px;
+    text-decoration: none !important;
+    border-radius: 6px;
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    background-color: #2c974b !important;
+}
+
+/* Blue override for external parts */
+.btn-external {
+    background-color: #0366d6 !important; /* GitHub Blue */
+}
+
+.btn-external:hover {
+    background-color: #0256b9 !important;
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: #6a737d;
+    font-size: 0.85rem;
+    border-top: 1px solid var(--gh-border);
+    padding-top: 2rem;
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
 @media (max-width: 900px) {
     #catalogue-container { grid-template-columns: repeat(2, 1fr); }
 }
+
 @media (max-width: 600px) {
+    body { padding: 1rem; }
     #catalogue-container { grid-template-columns: 1fr; }
+    .search-wrapper { max-width: 100%; }
 }
