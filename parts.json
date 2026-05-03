@@ -16,10 +16,10 @@
         "isExternal": false
     },
     {
-        "id": "	74HC4051 8-Channel",
-        "title": "	74HC4051 8-Channel",
-        "description": "	74HC4051 8-Channel",
-        "imagePath": "assets/parts-images/	74HC4051 8-Channel.png",
+        "id": "74HC4051 8-Channel",
+        "title": "74HC4051 8-Channel",
+        "description": "74HC4051 8-Channel",
+        "imagePath": "assets/parts-images/74HC4051 8-Channel.png",
         "downloadPath": "https://digitalconcepts.net.au/fritzing/content/support/parts/74HC4051%20Module.fzpz",
         "isExternal": true
     }
