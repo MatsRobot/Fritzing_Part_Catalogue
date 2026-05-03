@@ -94,6 +94,40 @@
     text-decoration: underline;
 }
 
+
+/* Styling the Download button */
+.btn-download {
+    background-color: var(--gh-green); /* GitHub Green */
+    color: #ffffff !important; /* Force white text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    transition: background-color 0.2s;
+    margin-top: auto; /* Pushes button to bottom of card */
+}
+
+.btn-download:hover {
+    background-color: var(--gh-green-hover);
+    text-decoration: none;
+}
+
+/* Specific styling for external links if you want them blue instead */
+.btn-external {
+    background-color: var(--gh-blue);
+}
+
+.btn-external:hover {
+    background-color: #0256b9;
+}
+
+
+
+
 #part-search {
     width: 100%;
     padding: 10px 12px 10px 35px;
