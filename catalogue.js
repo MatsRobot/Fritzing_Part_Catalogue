@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <a href="${part.downloadPath}" 
                            class="btn-download ${part.isExternal ? 'btn-external' : ''}" 
                            ${part.isExternal ? 'target="_blank"' : 'download'}>
-                            <span>${part.isExternal ? 'View on GitHub' : 'Download .fzpz'}</span>
+                            <span>${part.isExternal ? 'Download .fzpz' : 'Download .fzpz'}</span>
                         </a>
                     </div>
                 </div>`;
