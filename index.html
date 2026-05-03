@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://matsrobot.github.io/Favicon-192.png" sizes="192x192">
+    
+    <title>Open-Source Fritzing Component Catalogue | MatsRobot</title>
+    <meta name="description" content="A searchable directory of custom and verified Fritzing parts by MatsRobot, complete with visual previews.">
+    
+    <!-- Link to the CSS and JS files -->
+    <link rel="stylesheet" href="catalogue.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>🛠️ Fritzing Component Catalogue</h1>
+        <p>A library of open-source Fritzing parts (<code>.fzpz</code>) created or verified by MatsRobot.</p>
+        <div class="note" style="border-left-color: var(--gh-blue); background-color: #f1f8ff; color: var(--gh-blue);">
+            <strong>How to Use:</strong> Locate the component you need. If the component is hosted on an external site (GitHub), you will be redirected there. Otherwise, use the green "Download" button to get the <code>.fzpz</code> file directly.
+        </div>
+    </header>
+
+    <!-- This empty div is crucial. JavaScript will populate it. -->
+    <main id="catalogue-container"></main>
+
+    <footer>
+        <p>© 2026 MatsRobot | Part of the Open Source Robotics Initiative</p>
+    </footer>
+
+    <!-- Run the script last to ensure the page is loaded -->
+    <script src="catalogue.js"></script>
+
+</body>
+</html>

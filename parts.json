@@ -1,0 +1,26 @@
+[
+    {
+        "id": "Wiper_Motor",
+        "title": "Wiper_Motor",
+        "description": "Wiper_Motor",
+        "imagePath": "assets/parts-images/Wiper_Motor.png",
+        "downloadPath": "assets/parts-files/Wiper_Motor.fzpz",
+        "isExternal": false
+    },
+	{
+        "id": "VL53L1X_Module_1",
+        "title": "VL53L1X_Module_1",
+        "description": "VL53L1X_Module_1",
+        "imagePath": "assets/parts-images/VL53L1X_Module_1.png",
+        "downloadPath": "assets/parts-files/VL53L1X_Module_1.fzpz",
+        "isExternal": false
+    },
+    {
+        "id": "	74HC4051 8-Channel",
+        "title": "	74HC4051 8-Channel",
+        "description": "	74HC4051 8-Channel",
+        "imagePath": "assets/parts-images/	74HC4051 8-Channel.png",
+        "downloadPath": "https://digitalconcepts.net.au/fritzing/content/support/parts/74HC4051%20Module.fzpz",
+        "isExternal": true
+    }
+]
