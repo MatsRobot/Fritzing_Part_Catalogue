@@ -1,31 +1,31 @@
 [
     {
-       "id": "Wiper_Motor",
-        "title": "Wiper_Motor",
-        "description": "Wiper_Motor",
+        "id": "Wiper_Motor",
+        "title": "Wiper Motor",
+        "description": "Standard 12V Wiper Motor optimized for high-torque robotics documentation.",
         "imagePath": "assets/parts-images/Wiper_Motor.png",
         "downloadPath": "assets/parts-files/Wiper_Motor.fzpz",
-        "isExternal": false
-        "sourceName": "Mat's Robot",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
         "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
-    }
-	{
+    },
+    {
         "id": "VL53L1X_Module_1",
-        "title": "VL53L1X_Module_1",
-        "description": "VL53L1X_Module_1",
+        "title": "VL53L1X Module",
+        "description": "Time-of-Flight (ToF) Long Range Distance Sensor breakout.",
         "imagePath": "assets/parts-images/VL53L1X_Module_1.png",
         "downloadPath": "assets/parts-files/VL53L1X_Module_1.fzpz",
-        "isExternal": false
-        "sourceName": "Mat's Robot",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
         "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
     },
     {
         "id": "74HC4051-8-Channel",
-        "title": "74HC4051-8-Channel",
-        "description": "74HC4051-8-Channel",
+        "title": "74HC4051 8-Channel Mux",
+        "description": "Analog Multiplexer/Demultiplexer module.",
         "imagePath": "assets/parts-images/74HC4051-8-Channel.png",
         "downloadPath": "https://digitalconcepts.net.au/fritzing/content/support/parts/74HC4051%20Module.fzpz",
-        "isExternal": true
+        "isExternal": true,
         "sourceName": "digitalconcepts.net.au",
         "sourceUrl": "https://digitalconcepts.net.au/fritzing/content/support/parts/"
     }
