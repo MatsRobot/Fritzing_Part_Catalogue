@@ -66,11 +66,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h3>${part.title}</h3>
                         ${sourceCredit}
                         <p>${part.description}</p>
-                        <a href="${part.downloadPath}" 
-                           class="btn-download ${part.isExternal ? 'btn-external' : ''}" 
-                           ${part.isExternal ? 'target="_blank"' : 'download'}>
-                            <span>${part.isExternal ? 'Download .fzpz' : 'Download .fzpz'}</span>
-                        </a>
+                     <a href="${part.downloadPath}" 
+                       class="btn-download ${part.isExternal ? 'btn-external' : ''}" 
+                       download>
+                       Download .fzpz
+                    </a>
+                        
                     </div>
                 </div>`;
             
