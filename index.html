@@ -8,7 +8,6 @@
     <title>Open-Source Fritzing Component Catalogue | MatsRobot</title>
     <meta name="description" content="A searchable directory of custom and verified Fritzing parts by MatsRobot, complete with visual previews.">
     
-    <!-- Link to the CSS and JS files -->
     <link rel="stylesheet" href="catalogue.css">
 </head>
 <body>
@@ -16,27 +15,24 @@
     <header class="main-header">
         <h1>🛠️ Fritzing Component Catalogue</h1>
         <p>A library of open-source Fritzing parts (<code>.fzpz</code>) created or verified by MatsRobot.</p>
-        <div class="note" style="border-left-color: var(--gh-blue); background-color: #f1f8ff; color: var(--gh-blue);">
-            <strong>How to Use:</strong> Locate the component you need. If the component is hosted on an external site (GitHub), you will be redirected there. Otherwise, use the green "Download" button to get the <code>.fzpz</code> file directly.
+        <div class="note" style="border-left-color: #0366d6; background-color: #f1f8ff; color: #0366d6; padding: 1rem; border-left: 5px solid; border-radius: 4px; margin: 1rem 0;">
+            <strong>How to Use:</strong> Locate the component you need. Use the search bar to filter by name or description. Use the green "Download" button to get the <code>.fzpz</code> file directly.
         </div>
     </header>
-<div class="search-section">
-    <div class="search-wrapper">
-        <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16"><path d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 011.5 7zm5.13 8.13l-3.38-3.38a6.5 6.5 0 10-1.414 1.414l3.38 3.38z"/></svg>
-        <input type="text" id="part-search" placeholder="Search components (e.g., 'Encoder', 'ADS1115')..." autocomplete="off">
+
+    <div class="search-section">
+        <div class="search-wrapper">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16"><path d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 011.5 7zm5.13 8.13l-3.38-3.38a6.5 6.5 0 10-1.414 1.414l3.38 3.38z"/></svg>
+            <input type="text" id="part-search" placeholder="Search components (e.g., 'Wiper', 'VL53L1X')..." autocomplete="off">
+        </div>
     </div>
-</div>
 
-<main id="catalogue-container"></main>
-
-    <!-- This empty div is crucial. JavaScript will populate it. -->
     <main id="catalogue-container"></main>
 
     <footer>
         <p>© 2026 MatsRobot | Part of the Open Source Robotics Initiative</p>
     </footer>
 
-    <!-- Run the script last to ensure the page is loaded -->
     <script src="catalogue.js"></script>
 
 </body>
