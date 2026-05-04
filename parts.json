@@ -89,6 +89,16 @@
         "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
     },
     {
+        "id": "Heltec-WiFi-Kit-8",
+        "title": "Heltec WiFi Kit 8",
+        "description": "WiFi Kit 8 is a classic IoT dev-board designed & produced by Heltec Automation(TM), it’s a highly integrated product based on ESP8266 (Wi-Fi), Li-Po battery management system, 0.91″ OLED is also included. It’s the best choice for smart cities, smart farms, smart homes, and IoT makers.",
+        "imagePath": "assets/parts-images/Heltec-WiFi-Kit-8.png",
+        "downloadPath": "https://digitalconcepts.net.au/fritzing/content/support/parts/Heltec%20WiFi%20Kit%208.fzpz",
+        "isExternal": true,
+        "sourceName": "digitalconcepts.net.au",
+        "sourceUrl": "http://digitalconcepts.net.au/fritzing/index.php?op=parts"
+    },    
+	{
         "id": "74HC4051-8-Channel",
         "title": "74HC4051 8-Channel Mux",
         "description": "Analog Multiplexer/Demultiplexer module.",
