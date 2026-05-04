@@ -1,4 +1,3 @@
-/* --- VARIABLES --- */
 /* --- UPDATED BRAND VARIABLES --- */
 :root {
     --gh-blue: #0366d6;
@@ -6,9 +5,20 @@
     --gh-green-hover: #2ea44f;
     --gh-border: #eaecef;
     --gh-bg-gray: #f6f8fa;
-    --gh-dark: #24292e;
+    --gh-dark: #24292e;         /* Primary Text Color */
+    --gh-text-muted: #586069;   /* Gray Text */
     --note-bg: #fffbdd;         /* Mat's Robot Yellow Note */
     --note-border: #d4a017;     /* Mat's Robot Gold Border */
+}
+
+/* --- MAIN LAYOUT --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--gh-dark);      /* FIXED: Changed from --gh-text to --gh-dark */
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;                 /* Changed to 0 to manage spacing via containers */
+    background-color: #ffffff;
 }
 
 /* --- BRANDED NOTE BOX --- */
@@ -16,12 +26,13 @@
     background-color: var(--note-bg) !important;
     padding: 1.1rem;
     border-left: 5px solid var(--note-border) !important;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
     border-radius: 4px;
     color: var(--gh-dark);
     font-size: 0.95rem;
     max-width: 950px;
     text-align: left;
+    box-sizing: border-box;
 }
 
 .note strong {
@@ -29,42 +40,32 @@
 }
 
 /* --- UPDATED HEADER --- */
+.main-header {
+    max-width: 950px;
+    margin: 2.5rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
 .main-header h1 {
     font-size: 2.2rem;
     color: var(--gh-dark);
-    margin-bottom: 0.2rem;
+    margin: 0 0 0.2rem 0;
+    font-weight: 600;
 }
 
 .main-header p {
-    color: var(--gh-blue); /* Matches the sub-header in Mat's Robot */
+    color: var(--gh-blue);      /* Mat's Robot Blue sub-header */
     font-size: 1.1rem;
     font-weight: 500;
-}
-
-/* --- UPDATED CARD TITLES --- */
-.card-content h3 {
-    color: var(--gh-blue) !important; /* Matches link colors in hub */
-}
-
-/* --- MAIN LAYOUT --- */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    color: var(--gh-text);
-    line-height: 1.5;
-    margin: 0;
-    padding: 2rem;
-    background-color: #ffffff;
-}
-
-.main-header {
-    max-width: 1012px;
-    margin: 0 auto 2rem auto;
-    text-align: center;
+    margin-top: 0;
 }
 
 /* --- SEARCH SECTION --- */
 .search-section {
-    margin-bottom: 2rem;
+    max-width: 950px;
+    margin: 0 auto 2rem auto;
+    padding: 0 2rem;
     display: flex;
     justify-content: center;
 }
@@ -75,14 +76,6 @@ body {
     max-width: 500px;
 }
 
-.search-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    fill: #586069;
-}
-
 #part-search {
     width: 100%;
     padding: 10px 12px 10px 35px;
@@ -91,7 +84,7 @@ body {
     border-radius: 6px;
     background-color: var(--gh-bg-gray);
     box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
-    transition: border-color 0.2s, background-color 0.2s;
+    transition: all 0.2s;
 }
 
 #part-search:focus {
@@ -104,10 +97,11 @@ body {
 /* --- THE GRID CONTAINER --- */
 #catalogue-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
-    max-width: 1012px;
+    max-width: 950px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 /* --- THE CARD STYLE --- */
@@ -117,7 +111,6 @@ body {
     background: #fff;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -152,31 +145,19 @@ body {
 .card-content h3 {
     font-size: 1.1rem;
     margin: 0 0 0.5rem 0;
-    color: var(--gh-text);
-}
-
-.source-credit {
-    font-size: 0.75rem;
-    color: #6a737d;
-    margin-bottom: 10px;
-    font-style: italic;
-}
-
-.source-credit a {
-    color: var(--gh-blue);
-    text-decoration: none;
+    color: var(--gh-blue) !important; /* FIXED: Blue titles like the main hub */
 }
 
 .card-content p {
     font-size: 0.85rem;
-    color: #586069;
+    color: var(--gh-text-muted);
     margin-bottom: 1.5rem;
     flex-grow: 1;
 }
 
-/* --- BUTTON STYLES (Fixed to always show color) --- */
+/* --- BUTTON STYLES --- */
 .btn-download {
-    background-color: #2ea44f !important; /* GitHub Green */
+    background-color: var(--gh-green) !important;
     color: #ffffff !important;
     padding: 10px 20px;
     text-decoration: none !important;
@@ -187,39 +168,23 @@ body {
     text-align: center;
     border: 1px solid rgba(27, 31, 35, 0.15);
     transition: background-color 0.2s;
-    cursor: pointer;
 }
 
 .btn-download:hover {
-    background-color: #2c974b !important;
+    background-color: var(--gh-green-hover) !important;
 }
 
-/* Blue override for external parts */
 .btn-external {
-    background-color: #0366d6 !important; /* GitHub Blue */
-}
-
-.btn-external:hover {
-    background-color: #0256b9 !important;
+    background-color: var(--gh-blue) !important;
 }
 
 /* --- FOOTER --- */
 footer {
     margin-top: 4rem;
-    text-align: center;
-    color: #6a737d;
-    font-size: 0.85rem;
+    background-color: var(--gh-bg-gray);
     border-top: 1px solid var(--gh-border);
-    padding-top: 2rem;
-}
-
-/* --- RESPONSIVE BREAKPOINTS --- */
-@media (max-width: 900px) {
-    #catalogue-container { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 600px) {
-    body { padding: 1rem; }
-    #catalogue-container { grid-template-columns: 1fr; }
-    .search-wrapper { max-width: 100%; }
+    padding: 3rem 1rem;
+    text-align: center;
+    color: var(--gh-text-muted);
+    font-size: 0.9rem;
 }
