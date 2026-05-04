@@ -10,6 +10,75 @@
         "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
     },
     {
+        "id": "Battery_Switch",
+        "title": "Battery Isolating Switch",
+        "description": "Battery Isolating Switch is a maintenance device used to cut off power from a vehicle or system’s battery.",
+        "imagePath": "assets/parts-images/Battery_Switch.png",
+        "downloadPath": "assets/parts-files/Battery_Switch.fzpz",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
+        "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+    },    
+    {
+        "id": "Battery_Earth",
+        "title": "Battery Earth Terminal",
+        "description": "Battery Earth Terminal provides a secure and conductive connection between the battery and the vehicle chassis (ground).",
+        "imagePath": "assets/parts-images/Battery_Earth.png",
+        "downloadPath": "assets/parts-files/Battery_Earth.fzpz",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
+        "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+    },    
+    {
+        "id": "Car_Leisure_Battery",
+        "title": "Car Leisure Battery",
+        "description": "12 Volts Car Leisure Battery.",
+        "imagePath": "assets/parts-images/Car_Leisure_Battery.png",
+        "downloadPath": "assets/parts-files/Car_Leisure_Battery.fzpz",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
+        "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+    },        
+	{
+        "id": "ITC3780_Module_1",
+        "title": "ITC3780 14A Module",
+        "description": "LTC3780 High-Power Automatic Step UP/Down Power Module DC-DC Converter.",
+        "imagePath": "assets/parts-images/ITC3780_Module_1.png",
+        "downloadPath": "assets/parts-files/ITC3780_Module_1.fzpz",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
+        "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+    },    
+	{
+        "id": "Split_Charge_Relay",
+        "title": "Split Charge Relay",
+        "description": "12V 140 Amp Split Charge Relay VSR Smart Dual Battery Isolator, Automatic Disconnect Switch, Voltage Sensitive Relay Kit with LED Screen Display for Campervan Van Truck SUV RV ATV UTV Boat.",
+        "imagePath": "assets/parts-images/Split_Charge_Relay.png",
+        "downloadPath": "assets/parts-files/Split_Charge_Relay.fzpz",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
+        "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+    },
+    {
+        "id": "Car_Relay",
+        "title": "Car Relay",
+        "description": "12V Automotive Relay 40A 4-Pin SPNO Automotive Car Vehicle General Purpose.",
+        "imagePath": "assets/parts-images/Car_Relay.png",
+        "downloadPath": "assets/parts-files/Car_Relay.fzpz",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
+        "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+    },    {
+        "id": "Car_Fuse",
+        "title": "Car Fuse",
+        "description": "In-line Car Fuse",
+        "imagePath": "assets/parts-images/Car_Fuse.png",
+        "downloadPath": "assets/parts-files/Car_Fuse.fzpz",
+        "isExternal": false,
+        "sourceName": "MatsRobot",
+        "sourceUrl": "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+    },
+    {
         "id": "VL53L1X_Module_1",
         "title": "VL53L1X Module",
         "description": "Time-of-Flight (ToF) Long Range Distance Sensor breakout.",
