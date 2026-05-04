@@ -97,5 +97,15 @@
         "isExternal": true,
         "sourceName": "digitalconcepts.net.au",
         "sourceUrl": "http://digitalconcepts.net.au/fritzing/index.php?op=parts"
+    },
+    {
+        "id": "Arduino_nano_R4-tht",
+        "title": "Arduino Nano R4",
+        "description": "Arduino Nano R4 is a compact, 32-bit microcontroller board powered by the Renesas RA4M1 processor (Arm Cortex-M4F), offering significant performance upgrades over previous Nano models.",
+        "imagePath": "assets/parts-images/Arduino_nano_R4-tht.png",
+        "downloadPath": "https://forum.fritzing.org/uploads/short-url/y4Uymx1k7F9rNBjkEJPL7YRDe9O.fzpz",
+        "isExternal": true,
+        "sourceName": "forum.fritzing.org",
+        "sourceUrl": "https://forum.fritzing.org/t/arduino-nano-r4-fritzing-part/32595/3"
     }
 ]
