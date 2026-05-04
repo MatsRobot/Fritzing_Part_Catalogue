@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Determine the source credit line based on whether it is an external part
             const sourceCredit = part.isExternal 
                 ? `<p class="source-credit">Source: <a href="${part.sourceUrl}" target="_blank">${part.sourceName}</a></p>` 
-                : `<p class="source-credit">Source: MatsRobot (Original)</p>`;
+                : `<p class="source-credit">Source: MatsRobot</p>`;
 
             const partHtml = `
                 <div class="catalogue-card" id="${part.id}">
