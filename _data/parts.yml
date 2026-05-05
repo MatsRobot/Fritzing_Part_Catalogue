@@ -222,3 +222,12 @@
   isExternal: true
   sourceName: "forum.fritzing.org"
   sourceUrl: "https://forum.fritzing.org/t/solved-looking-for-part-xy-160d/17286/2"    
+
+- id: AS5600-moduled
+  title: AS5600 Magnetic Rotary Position Sensor
+  description: "The AS5600 is a 12-bit programmable magnetic rotary position sensor designed to measure the absolute angle of on-axis magnet with 4096 positions per full rotation and supports I2C (default address 0x36), analog voltage, and PWM."
+  imagePath: assets/parts-images/AS5600-module.png
+  downloadPath: "https://forum.fritzing.org/uploads/short-url/dSUMyJUlXKapvVjLqg9NIRefnkS.fzpz"
+  isExternal: true
+  sourceName: "forum.fritzing.org"
+  sourceUrl: "https://forum.fritzing.org/t/as5600-magnetic-encoder/21152"   
