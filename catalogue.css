@@ -128,28 +128,32 @@ body {
 @media (min-width: 601px) {
     .catalogue-card {
         display: grid;
-        grid-template-columns: 120px 200px 1fr; /* Image-Area | Title-Area | Description-Area */
+        /* Increased first column to 150px for better image fit */
+        grid-template-columns: 150px 200px 1fr; 
         align-items: center;
         border: 1px solid var(--gh-border);
         border-radius: 6px;
         background: #fff;
-        padding: 10px;
+        padding: 15px; /* Added more padding for breathing room */
         gap: 20px;
-        height: auto;
     }
 
-    .card-image {
-        border-bottom: none;
+	.card-image {
         border-right: 1px solid var(--gh-border);
-        padding: 0 10px 0 0;
-        height: 100%;
-        flex-direction: column; /* Stack image and button */
-        justify-content: space-between;
+        padding-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Ensure it uses the full 150px */
     }
 
-    .card-image img {
-        max-height: 60px; /* Smaller thumbnail */
-        margin-bottom: 8px;
+	.card-image img {
+        max-width: 100%; /* Prevent image from spilling out */
+        height: auto;
+        max-height: 80px; /* Increased slightly from 60px */
+        margin-bottom: 12px;
+        object-fit: contain;
     }
 
     .card-content {
@@ -175,11 +179,23 @@ body {
         flex-grow: 0;
     }
 
-    .btn-download {
-        font-size: 0.75rem;
-        padding: 5px 10px;
+	.btn-download {
+        display: inline-block; /* Essential for padding to work */
+        background-color: var(--gh-green) !important;
+        color: #ffffff !important;
+        padding: 6px 12px;
+        text-decoration: none !important;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-align: center;
         width: 100%;
         box-sizing: border-box;
+        border: 1px solid rgba(27, 31, 35, 0.15);
+    }
+	
+	.btn-external {
+        background-color: var(--gh-blue) !important;
     }
 }
 
