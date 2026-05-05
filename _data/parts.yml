@@ -54,7 +54,7 @@
 
 - id: Car_Relay
   title: Car Relay
-  description: "12V Automotive Relay 40A 5-Pin SPNO Automotive Car Vehicle General Purpose."
+  description: "12V Automotive Relay 40A 4-Pin SPNO Automotive Car Vehicle General Purpose."
   imagePath: assets/parts-images/Car_Relay.png
   downloadPath: assets/parts-files/Car_Relay.fzpz
   isExternal: false
@@ -89,7 +89,7 @@
   sourceUrl: "http://digitalconcepts.net.au/fritzing/index.php?op=parts"
 
 - id: 74HC4051-8-Channel
-  title: Multiplexer 74HC4051 8-Channel Mux
+  title: 74HC4051 8-Channel Mux
   description: "Analog Multiplexer/Demultiplexer module."
   imagePath: assets/parts-images/74HC4051-8-Channel.png
   downloadPath: "https://digitalconcepts.net.au/fritzing/content/support/parts/74HC4051%20Module.fzpz"
@@ -105,3 +105,40 @@
   isExternal: true
   sourceName: "forum.fritzing.org"
   sourceUrl: "https://forum.fritzing.org/t/arduino-nano-r4-fritzing-part/32595/3"
+ 
+- id: Shunt_Resistor_0.01_Ohms
+  title: Shunt Resistor 0.01 Ohms
+  description: "External ceramic 0.01 Ohms Shunt Resistor."
+  imagePath: assets/parts-images/Shunt_Resistor_0.01_Ohms.png
+  downloadPath: assets/parts-files/Shunt_Resistor_0.01_Ohms.fzpz
+  isExternal: false
+  sourceName: MatsRobot
+  sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+  
+- id: INA219_Module_CJMCU
+  title: INA219 Module
+  description: "The INA219 is a bidirectional, current and power monitor module , designed to measure DC voltage, current, and power in high-side circuits.  It communicates via an I2C interface and features a 12-bit ADC with 16 programmable addresses for flexible configuration with microcontrollers."
+  imagePath: assets/parts-images/INA219_Module_CJMCU.png
+  downloadPath: "https://github.com/ramjipatel041/Fritzing-Modules/blob/main/INA219%20Module%20CJMCU.fzpz"
+  isExternal: true
+  sourceName: "github.com/ramjipatel041"
+  sourceUrl: "https://github.com/ramjipatel041/Fritzing-Modules/tree/main"
+  
+- id: ACS712_Current_Sensor_5A_20A_30A
+  title: ACS712 Current Sensor 5A 20A 30A
+  description: "The ACS712 is a fully integrated, Hall-effect-based linear current sensor IC  designed for economical and precise AC or DC current sensing in industrial, commercial, and communications systems."
+  imagePath: assets/parts-images/ACS712_Current_Sensor_5A_20A_30A.png
+  downloadPath: "https://forum.fritzing.org/uploads/short-url/pFW6CL8MPjEnvzfV3EynSFIpYBf.fzpz"
+  isExternal: true
+  sourceName: "forum.fritzing.org"
+  sourceUrl: "https://forum.fritzing.org/t/current-sensor-5a-acs712/7694/3"
+   
+- id: Maxbotix_MaxSonar_Ultrasonic_Sensor
+  title: LV-MaxSonar-EZ0, Maxbotix MB1000
+  description: "The MB1000 LV‑MaxSonar‑EZ0 has the widest and most sensitive beam pattern of any unit from LV‑MaxSonar‑EZ sensor line."
+  imagePath: assets/parts-images/Maxbotix_MaxSonar_Ultrasonic_Sensor.png
+  downloadPath: "https://github.com/adafruit/Fritzing-Library/blob/master/parts/Maxbotix%20MaxSonar%20Ultrasonic%20Sensor.fzpz"
+  isExternal: true
+  sourceName: "adafruit/Fritzing-Library"
+  sourceUrl: "https://github.com/adafruit/Fritzing-Library"
+  
