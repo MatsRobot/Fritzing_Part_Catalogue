@@ -126,6 +126,38 @@ body {
 .btn-external {
     background-color: var(--gh-blue) !important;
 }
+.external-libraries {
+    max-width: 950px;
+    margin: 0 auto 1.5rem auto;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: var(--gh-text-muted);
+}
+
+.library-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.lib-link {
+    display: inline-block;
+    padding: 5px 12px;
+    border: 1px solid var(--gh-border);
+    border-radius: 20px; /* Gives it a pill shape */
+    text-decoration: none;
+    color: var(--gh-blue);
+    background-color: var(--gh-bg-gray);
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.lib-link:hover {
+    background-color: #fff;
+    border-color: var(--gh-blue);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
 /* --- THE GRID CONTAINER --- */
 #catalogue-container {
