@@ -7,6 +7,15 @@
   sourceName: MatsRobot
   sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
 
+- id: MT6701_Module
+  title: MT6701 Magnetic Angle Encoder
+  description: "The MT6701 is a high-precision 14-bit magnetic angle encoder based on differential Hall induction technology, designed to measure absolute rotation from 0° to 360°."
+  imagePath: assets/parts-images/MT6701_Module.png
+  downloadPath: assets/parts-files/MT6701_Module.fzpz
+  isExternal: false
+  sourceName: MatsRobot
+  sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+
 - id: Battery_Switch
   title: Battery Isolating Switch
   description: "Battery Isolating Switch is a maintenance device used to cut off power from a vehicle or system’s battery."
