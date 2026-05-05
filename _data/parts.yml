@@ -141,4 +141,13 @@
   isExternal: true
   sourceName: "adafruit/Fritzing-Library"
   sourceUrl: "https://github.com/adafruit/Fritzing-Library/tree/master/parts"
+
+- id: Humidity_and_Temperature_Sensor_DHT11
+  title: Humidity and Temperature Sensor DHT11
+  description: "The DHT11 is a digital temperature and humidity sensor that uses a single-wire interface to communicate with microcontrollers.  It features an onboard 8-bit microcontroller that processes data from a capacitive humidity sensor and an NTC thermistor, outputting calibrated digital signals for both parameters."
+  imagePath: assets/parts-images/Humidity_and_Temperature_Sensor_DHT11.png
+  downloadPath: "https://github.com/adafruit/Fritzing-Library/raw/master/parts/DHT11%20Humitidy%20and%20Temperature%20Sensor.fzpz"
+  isExternal: true
+  sourceName: "adafruit/Fritzing-Library"
+  sourceUrl: "https://github.com/adafruit/Fritzing-Library/tree/master/parts"
   
