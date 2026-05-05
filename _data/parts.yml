@@ -160,3 +160,12 @@
   sourceName: "forum.fritzing.org"
   sourceUrl: "https://forum.fritzing.org/t/20x4-lcd-display-with-integrated-i2c-based-on-lcd1602-i2c-by-stephen-lilley/6814/6"
   
+- id: TJA1050-CAN-Module
+  title: TJA1050 CAN Bus Module
+  description: "The TJA1050 CAN Bus Module is a high-speed transceiver used to interface microcontrollers with the physical Controller Area Network (CAN) bus. It's a reliable means of communication at speeds up to 1 Mbaud."
+  imagePath: assets/parts-images/TJA1050-CAN-Module.png
+  downloadPath: "https://forum.fritzing.org/uploads/short-url/a5P40NEYgBtLJQCdQcnQrA0Mh3Q.fzpz"
+  isExternal: true
+  sourceName: "forum.fritzing.org"
+  sourceUrl: "https://forum.fritzing.org/t/search-tja1050-shield/28929"
+    
