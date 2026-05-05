@@ -240,13 +240,13 @@ body {
     }
 
     .card-image img {
-        max-width: 100%;
+        max-width: 80%;
         max-height: 180px;
         margin-bottom: 10px;
     }
 
     .btn-download {
-        width: 100%;
+        width: 80%;
     }
 
     .main-header h1 {
