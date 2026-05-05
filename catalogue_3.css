@@ -1,0 +1,292 @@
+/* --- UPDATED BRAND VARIABLES --- */
+:root {
+    --gh-blue: #0366d6;
+    --gh-green: #238636;        /* Mat's Robot Green */
+    --gh-green-hover: #2ea44f;
+    --gh-border: #eaecef;
+    --gh-bg-gray: #f6f8fa;
+    --gh-dark: #24292e;         /* Primary Text Color */
+    --gh-text-muted: #586069;   /* Gray Text */
+    --note-bg: #fffbdd;         /* Mat's Robot Yellow Note */
+    --note-border: #d4a017;     /* Mat's Robot Gold Border */
+}
+
+/* --- MAIN LAYOUT --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--gh-dark);      
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;                 
+    background-color: #ffffff;
+}
+
+/* --- BRANDED NOTE BOX --- */
+.note {
+    background-color: var(--note-bg) !important;
+    padding: 1.1rem;
+    border-left: 5px solid var(--note-border) !important;
+    margin: 1.5rem auto;
+    border-radius: 4px;
+    color: var(--gh-dark);
+    font-size: 0.95rem;
+    max-width: 950px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.note strong {
+    color: var(--gh-dark);
+}
+
+/* --- UPDATED HEADER --- */
+.main-header {
+    max-width: 950px;
+    margin: 2.5rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2.2rem;
+    color: var(--gh-dark);
+    margin: 0 0 0.2rem 0;
+    font-weight: 600;
+}
+
+.main-header p {
+    color: var(--gh-blue);      
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+/* --- SEARCH SECTION --- */
+.search-section {
+    max-width: 950px;
+    margin: 0 auto 2rem auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #586069;
+    z-index: 1;
+}
+
+#part-search {
+    width: 100%;
+    padding: 10px 12px 10px 35px;
+    font-size: 1rem;
+    border: 1px solid var(--gh-border);
+    border-radius: 6px;
+    background-color: var(--gh-bg-gray);
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+    transition: all 0.2s;
+}
+
+#part-search:focus {
+    outline: none;
+    background-color: #fff;
+    border-color: var(--gh-blue);
+    box-shadow: 0 0 0 3px rgba(3,102,214,0.3);
+}
+
+/* --- GLOBAL BUTTON STYLES --- */
+.btn-download {
+    display: inline-block; 
+    background-color: var(--gh-green) !important;
+    color: #ffffff !important;
+    padding: 6px 15px; 
+    text-decoration: none !important;
+    border-radius: 4px; 
+    font-weight: 600;
+    font-size: 0.75rem; 
+    text-align: center;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    background-color: var(--gh-green-hover) !important;
+}
+
+.btn-external {
+    background-color: var(--gh-blue) !important;
+}
+
+/* --- THE GRID CONTAINER --- */
+#catalogue-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.75rem;           
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- DESKTOP VIEW (Horizontal List Layout) --- */
+@media (min-width: 601px) {
+    .catalogue-card {
+        display: grid;
+        grid-template-columns: 150px 240px 1fr; 
+        align-items: center;
+        border: 1px solid var(--gh-border);
+        border-radius: 6px;
+        background: #fff;
+        padding: 15px; 
+        gap: 25px;
+    }
+
+    .card-image {
+        border-right: 1px solid var(--gh-border);
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .card-image img {
+        max-width: 100%;
+        max-height: 80px;
+        object-fit: contain;
+    }
+
+    .title-section {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        text-align: center;     
+        gap: 10px;              
+        min-width: 240px;       
+    }
+
+    .card-content h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        color: var(--gh-blue) !important;
+    }
+
+    .source-credit {
+        margin: 0;
+        font-size: 0.8rem;
+        color: var(--gh-text-muted);
+    }
+
+    .btn-download {
+        align-self: center; 
+        min-width: 160px;       
+    }
+
+    .description-text {
+        grid-column: 3;
+        margin: 0;
+        padding-left: 20px;
+        border-left: 1px solid var(--gh-border);
+        font-size: 0.9rem; 
+        color: var(--gh-text-muted);
+        line-height: 1.5;
+    }
+
+    .card-content {
+        display: contents;
+    }
+}
+
+/* --- MOBILE VIEW (Re-ordered Sequence) --- */
+@media (max-width: 600px) {
+    #catalogue-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem; 
+        padding: 0 1rem;
+    }
+
+    .catalogue-card {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;
+        border: 1px solid var(--gh-border);
+        border-radius: 8px;
+        background-color: #fafbfc; 
+        box-shadow: 0 1px 3px rgba(27,31,35,0.04);
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 1. TITLE */
+    .title-section {
+        order: 1; 
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    /* 2. IMAGE */
+    .card-image {
+        order: 2; 
+        border: none;
+        padding: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .card-image img {
+        max-width: 80%;
+        max-height: 160px;
+    }
+
+    /* 3. DOWNLOAD BUTTON */
+    .btn-download {
+        order: 3; 
+        width: 80%; 
+        margin: 0 auto 1rem auto; 
+        padding: 10px;
+    }
+
+    /* 4. SOURCE */
+    .source-credit {
+        order: 4;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 0.85rem;
+    }
+
+    /* 5. DESCRIPTION */
+    .description-text {
+        order: 5; 
+        margin: 0;
+        padding: 0;
+        border: none; 
+        font-size: 0.9rem;
+        color: var(--gh-text-muted);
+        text-align: center;
+    }
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: 4rem;
+    background-color: var(--gh-bg-gray);
+    border-top: 1px solid var(--gh-border);
+    padding: 3rem 1rem;
+    text-align: center;
+    color: var(--gh-text-muted);
+    font-size: 0.9rem;
+}
