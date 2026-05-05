@@ -189,9 +189,19 @@
   
 - id: ESP32-S3-WROOM-1-N16R8-dev-board
   title: ESP32 S3 WROOM 1 N16R8 development board
-  description: "The ESP32 S3 Devkit is a high-performance development board based on the ESP32 S3 SoC, designed for AI, IoT, and embedded applications. Featuring the ESP32 S3 WROOM 1 N16R8 module, it comes equipped with 16MB Flash and 8MB PSRAM"
+  description: "The ESP32 S3 Devkit is a high-performance development board based on the ESP32 S3 SoC, designed for AI, IoT, and embedded applications. Featuring the ESP32 S3 WROOM 1 N16R8 module, it comes equipped with 16MB Flash and 8MB PSRAM."
   imagePath: assets/parts-images/ESP32-S3-WROOM-1-N16R8-dev-board.png
   downloadPath: "https://forum.fritzing.org/uploads/short-url/geIM4vymieQLlx6eMdJ1BDSlVEM.fzpz"
   isExternal: true
   sourceName: "forum.fritzing.org"
   sourceUrl: "https://forum.fritzing.org/t/im-looking-for-esp32-s3-n16r8/21946/4"    
+  
+- id: VL53L0X_Rt
+  title: VL53L0X Module
+  description: "Time-of-Flight (ToF) Long Range Distance Sensor breakout."
+  imagePath: assets/parts-images/VL53L0X_Rt.png
+  downloadPath: "https://github.com/mgesteiro/fritzing-parts/raw/main/VL53L0X/VL53L0X_Rt.fzpz"
+  isExternal: true
+  sourceName: "mgesteiro"
+  sourceUrl: "https://github.com/mgesteiro/fritzing-parts"    
+
