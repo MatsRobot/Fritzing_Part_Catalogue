@@ -220,63 +220,63 @@ body {
         display: flex;
         flex-direction: column;
         padding: 1.25rem;
-        border: 1px solid var(--gh-border);
+        border: 1px solid var(--gh-border); /* Keep the border for definition */
         border-radius: 8px;
-        background-color: #fafbfc; 
-        box-shadow: 0 1px 3px rgba(27,31,35,0.04);
+        background-color: #fafbfc; /* Keep the subtle background tint */
+        text-align: center; 
     }
 
-    .card-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* 1. TITLE */
+    /* "Unwrap" these so children can move independently */
+    .card-content, 
     .title-section {
-        order: 1; 
-        text-align: center;
-        margin-bottom: 0.5rem;
+        display: contents; 
+    }
+    
+    /* 1. TITLE AT TOP */
+    .catalogue-card h3 {
+        order: 1;
+        margin: 0 0 0.5rem 0;
+        font-size: 1.3rem;
+        color: var(--gh-blue) !important;
     }
 
-    /* 2. IMAGE */
+    /* 2. IMAGE BELOW TITLE */
     .card-image {
-        order: 2; 
+        order: 2;
+        margin: 0 0 1rem 0;
         border: none;
         padding: 0;
-        margin-bottom: 1rem;
-        text-align: center;
     }
 
     .card-image img {
         max-width: 80%;
         max-height: 160px;
+        object-fit: contain;
     }
 
-    /* 3. DOWNLOAD BUTTON */
+    /* 3. DOWNLOAD BUTTON BELOW IMAGE */
     .btn-download {
-        order: 3; 
-        width: 80%; 
-        margin: 0 auto 1rem auto; 
-        padding: 10px;
+        order: 3;
+        width: 80%;
+        margin: 0 auto 1rem auto;
     }
 
-    /* 4. SOURCE */
+    /* 4. SOURCE BELOW DOWNLOAD */
     .source-credit {
         order: 4;
-        text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         font-size: 0.85rem;
+        display: block; /* Ensure it takes its own line */
     }
 
-    /* 5. DESCRIPTION */
+    /* 5. DESCRIPTION AT BOTTOM */
     .description-text {
-        order: 5; 
+        order: 5;
         margin: 0;
-        padding: 0;
-        border: none; 
         font-size: 0.9rem;
-        color: var(--gh-text-muted);
-        text-align: center;
+        line-height: 1.4;
+        border: none; /* Ensure vertical line is gone on mobile */
+        padding: 0;
     }
 }
 
