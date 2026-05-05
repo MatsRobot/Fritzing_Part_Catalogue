@@ -105,14 +105,16 @@ body {
 
 /* --- GLOBAL BUTTON STYLES (Fixed to work everywhere) --- */
 .btn-download {
-    display: inline-block; /* Essential for padding/background to show */
+    display: inline-block; 
     background-color: var(--gh-green) !important;
     color: #ffffff !important;
-    padding: 8px 12px;
+    /* REDUCED PADDING: from 8px to 4px[cite: 1] */
+    padding: 4px 10px; 
     text-decoration: none !important;
-    border-radius: 6px;
+    border-radius: 4px; /* Slightly tighter corner */
     font-weight: 600;
-    font-size: 0.85rem;
+    /* REDUCED FONT SIZE: makes the button feel less 'heavy'[cite: 3] */
+    font-size: 0.75rem; 
     text-align: center;
     border: 1px solid rgba(27, 31, 35, 0.15);
     transition: background-color 0.2s;
