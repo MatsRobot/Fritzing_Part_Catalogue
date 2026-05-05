@@ -42,6 +42,15 @@
   isExternal: false
   sourceName: MatsRobot
   sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+  
+- id: Car_Battery
+  title: Lead Acid Car Battery
+  description: "12 Volts Lead Acid Car Battery."
+  imagePath: assets/parts-images/Car_Battery.png
+  downloadPath: assets/parts-files/Car_Battery.fzpz
+  isExternal: false
+  sourceName: MatsRobot
+  sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
 
 - id: ITC3780_Module_1
   title: ITC3780 14A Module
