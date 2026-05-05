@@ -186,3 +186,12 @@
   isExternal: true
   sourceName: "forum.fritzing.org"
   sourceUrl: "https://forum.fritzing.org/t/i-need-sn65hvd230/26719"    
+  
+- id: ESP32-S3-WROOM-1-N16R8-dev-board
+  title: ESP32 S3 WROOM 1 N16R8 development board
+  description: "The ESP32 S3 Devkit is a high-performance development board based on the ESP32 S3 SoC, designed for AI, IoT, and embedded applications. Featuring the ESP32 S3 WROOM 1 N16R8 module, it comes equipped with 16MB Flash and 8MB PSRAM"
+  imagePath: assets/parts-images/ESP32-S3-WROOM-1-N16R8-dev-board.png
+  downloadPath: "https://forum.fritzing.org/uploads/short-url/geIM4vymieQLlx6eMdJ1BDSlVEM.fzpz"
+  isExternal: true
+  sourceName: "forum.fritzing.org"
+  sourceUrl: "https://forum.fritzing.org/t/im-looking-for-esp32-s3-n16r8/21946/4"    
