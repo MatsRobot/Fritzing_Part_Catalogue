@@ -54,7 +54,7 @@
 
 - id: Car_Relay
   title: Car Relay
-  description: "12V Automotive Relay 40A 4-Pin SPNO Automotive Car Vehicle General Purpose."
+  description: "12V Automotive Relay 40A 5-Pin SPNO Automotive Car Vehicle General Purpose."
   imagePath: assets/parts-images/Car_Relay.png
   downloadPath: assets/parts-files/Car_Relay.fzpz
   isExternal: false
@@ -89,7 +89,7 @@
   sourceUrl: "http://digitalconcepts.net.au/fritzing/index.php?op=parts"
 
 - id: 74HC4051-8-Channel
-  title: 74HC4051 8-Channel Mux
+  title: Multiplexer 74HC4051 8-Channel Mux
   description: "Analog Multiplexer/Demultiplexer module."
   imagePath: assets/parts-images/74HC4051-8-Channel.png
   downloadPath: "https://digitalconcepts.net.au/fritzing/content/support/parts/74HC4051%20Module.fzpz"
