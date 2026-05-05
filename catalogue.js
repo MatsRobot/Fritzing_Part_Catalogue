@@ -61,22 +61,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 ? `<p class="source-credit">Source: <a href="${part.sourceUrl}" target="_blank">${part.sourceName}</a></p>` 
                 : `<p class="source-credit">Source: MatsRobot</p>`;
 
-            const partHtml = `
-                <div class="catalogue-card" id="${part.id}">
-                    <div class="card-image">
-                        <img src="${part.imagePath}" alt="${part.title}" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3>${part.title}</h3>
-                        ${sourceCredit}
-                        <p>${part.description}</p>
-                     <a href="${part.downloadPath}" 
-                       class="btn-download ${part.isExternal ? 'btn-external' : ''}" 
-                       download>
-                       Download .fzpz
-                    </a>
-                    </div>
-                </div>`;
+			const partHtml = `
+				<div class="catalogue-card" id="${part.id}">
+					<div class="card-image">
+						<img src="${part.imagePath}" alt="${part.title}" loading="lazy">
+						<a href="${part.downloadPath}" 
+						   class="btn-download ${part.isExternal ? 'btn-external' : ''}" 
+						   download>
+						   Download
+						</a>
+					</div>
+					<div class="card-content">
+						<div>
+							<h3>${part.title}</h3>
+							${sourceCredit}
+						</div>
+						<p>${part.description}</p>
+					</div>
+				</div>`;
             
             container.insertAdjacentHTML('beforeend', partHtml);
         });
