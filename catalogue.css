@@ -144,7 +144,7 @@ body {
     .catalogue-card {
         display: grid;
         /* Col 1: Image only | Col 2: Title, Source, Button | Col 3: Description */
-        grid-template-columns: 110px 240px 1fr; 
+        grid-template-columns: 150px 240px 1fr; 
         align-items: center;
         border: 1px solid var(--gh-border);
         border-radius: 6px;
@@ -155,7 +155,7 @@ body {
 
     .card-image {
         border-right: 1px solid var(--gh-border);
-        padding-right: 15px;
+        padding-right: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
