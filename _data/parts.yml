@@ -177,3 +177,12 @@
   isExternal: true
   sourceName: "forum.fritzing.org"
   sourceUrl: "https://forum.fritzing.org/t/part-creation-for-can-module-niren/6017/3"    
+  
+- id: waveshare-SN65HVD230
+  title: Waveshare SN65HVD230
+  description: "The Waveshare CAN Board SN65HVD230 features is pinout compatible with PCA82C250. It is powered from 3.3 V and features ESD protection. The SN65HVD230 CAN Board is ideal to connect microcontrollers to the CAN network and features cross-wire protection."
+  imagePath: assets/parts-images/waveshare-SN65HVD230.png
+  downloadPath: "https://forum.fritzing.org/uploads/short-url/lhQ0iE1nOzhlMQt57uIZPyoEUTJ.fzpz"
+  isExternal: true
+  sourceName: "forum.fritzing.org"
+  sourceUrl: "https://forum.fritzing.org/t/i-need-sn65hvd230/26719"    
