@@ -140,5 +140,5 @@
   downloadPath: "https://github.com/adafruit/Fritzing-Library/raw/master/parts/Maxbotix%20MaxSonar%20Ultrasonic%20Sensor.fzpz"
   isExternal: true
   sourceName: "adafruit/Fritzing-Library"
-  sourceUrl: "https://github.com/adafruit/Fritzing-Library"
+  sourceUrl: "https://github.com/adafruit/Fritzing-Library/tree/master/parts"
   
