@@ -214,3 +214,11 @@
   sourceName: "mgesteiro"
   sourceUrl: "https://github.com/mgesteiro/fritzing-parts"    
 
+- id: XY-160D-motor-driver
+  title: XY-160D-motor-driver
+  description: "The XY-160D is a dual-channel DC motor driver module based on the L298N logic, designed to control two DC motors simultaneously with high power output.  It is capable of handling a 7A continuous current per channel (50A peak) and supports a wide input voltage range of 6.5V to 27V."
+  imagePath: assets/parts-images/XY-160D-motor-driver.png
+  downloadPath: "https://forum.fritzing.org/uploads/short-url/e2Ex1AIX1MHoragpsUmmJ2JbDGq.fzpz"
+  isExternal: true
+  sourceName: "forum.fritzing.org"
+  sourceUrl: "https://forum.fritzing.org/t/solved-looking-for-part-xy-160d/17286/2"    
