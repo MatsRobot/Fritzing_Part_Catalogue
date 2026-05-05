@@ -260,8 +260,8 @@
   sourceUrl: "https://forum.fritzing.org/t/as5600-magnetic-encoder/21152"   
 
 - id: Tower-Pro-SG90-servo
-  title: Tower-Pro-SG90-servo
-  description: "The AS5600 is a 12-bit programmable magnetic rotary position sensor designed to measure the absolute angle of on-axis magnet with 4096 positions per full rotation and supports I2C (default address 0x36), analog voltage, and PWM."
+  title: TowerPro Servo Motor - SG90 Digital
+  description: "The SG90 from TowerPro is the most popular 9g servo in the world. This is the digital version! The unit features a stalling torque of 1.8kg in a tiny 9g micro package."
   imagePath: assets/parts-images/Tower-Pro-SG90-servo.png
   downloadPath: "https://github.com/KAST-Tech/fritzing-parts/raw/main/Tower%20Pro%20SG90%20servo.fzpz"
   isExternal: true
