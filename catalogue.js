@@ -65,16 +65,16 @@ document.addEventListener('DOMContentLoaded', function() {
 				<div class="catalogue-card" id="${part.id}">
 					<div class="card-image">
 						<img src="${part.imagePath}" alt="${part.title}" loading="lazy">
-						<a href="${part.downloadPath}" 
-						   class="btn-download ${part.isExternal ? 'btn-external' : ''}" 
-						   download>
-						   Download .fzpz
-						</a>
 					</div>
 					<div class="card-content">
 						<div class="title-section">
 							<h3>${part.title}</h3>
 							${sourceCredit}
+							<a href="${part.downloadPath}" 
+							   class="btn-download ${part.isExternal ? 'btn-external' : ''}" 
+							   download>
+							   Download .fzpz
+							</a>
 						</div>
 						<p class="description-text">${part.description}</p>
 					</div>

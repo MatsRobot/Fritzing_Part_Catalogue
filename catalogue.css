@@ -143,63 +143,73 @@ body {
 @media (min-width: 601px) {
     .catalogue-card {
         display: grid;
-        /* Col 1: Fixed 160px | Col 2: Only as wide as the title | Col 3: Everything else */
-        grid-template-columns: 160px auto 1fr; 
+        /* Col 1: Image only | Col 2: Title, Source, Button | Col 3: Description */
+        grid-template-columns: 110px 240px 1fr; 
         align-items: center;
         border: 1px solid var(--gh-border);
         border-radius: 6px;
         background: #fff;
         padding: 15px; 
-        gap: 30px; /* Increased gap for a cleaner look */
+        gap: 25px;
     }
 
     .card-image {
         border-right: 1px solid var(--gh-border);
-        padding-right: 20px;
+        padding-right: 15px;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        height: 100%;
     }
 
     .card-image img {
         max-width: 100%;
-        height: auto;
-        max-height: 100px; /* Slightly taller for better detail */
-        margin-bottom: 12px;
+        max-height: 80px;
         object-fit: contain;
     }
 
-    .btn-download {
-        width: 100%; 
-        box-sizing: border-box;
-        font-size: 0.8rem;
-    }
-
-    .card-content {
-        display: contents; 
-    }
-
-    /* Column 2: Title and Source */
+    /* The Middle Section holds the logic flow */
     .title-section {
         grid-column: 2;
-        min-width: 150px; /* Prevents it from being too squished */
+        display: flex;
+        flex-direction: column;
+        gap: 8px; /* Space between Title, Source, and Button */
     }
 
     .card-content h3 {
         margin: 0;
-        font-size: 1.15rem;
-        white-space: nowrap; /* Keeps titles on one line if possible */
+        font-size: 1.1rem;
+        color: var(--gh-blue) !important;
     }
 
-    /* Column 3: Description */
+    .source-credit {
+        margin: 0;
+        font-size: 0.8rem;
+        color: var(--gh-text-muted);
+    }
+
+    /* Button is now thinner and tucked under the source */
+    .btn-download {
+        align-self: flex-start; /* Don't stretch the button full width */
+        min-width: 140px;
+        padding: 5px 12px;
+        font-size: 0.75rem;
+    }
+
+    /* The Description Section */
     .description-text {
         grid-column: 3;
         margin: 0;
-        padding-left: 25px;
+        padding-left: 20px;
         border-left: 1px solid var(--gh-border);
-        font-size: 0.95rem;
+        font-size: 0.9rem; /* Slightly smaller text for description */
         color: var(--gh-text-muted);
-        line-height: 1.4;
+        line-height: 1.5;
+    }
+
+    /* Hide the 'contents' rule so our new layout works */
+    .card-content {
+        display: contents;
     }
 }
 
