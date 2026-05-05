@@ -7,6 +7,24 @@
   sourceName: MatsRobot
   sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
 
+- id: JST-XH-4A-M
+  title: 4 pin Male JST-XH Connector
+  description: "4 pin Male JST-XH Connector 2.5mm Pitch Disconnectable Crimp Style."
+  imagePath: assets/parts-images/JST-XH-4A-M.png
+  downloadPath: assets/parts-files/JST-XH-4A-M.fzpz
+  isExternal: false
+  sourceName: MatsRobot
+  sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+
+- id: JST-XH-4A-F
+  title: 4 pin Female JST-XH Connector
+  description: "4 pin Female JST-XH Connector 2.5mm Pitch Disconnectable Crimp Style."
+  imagePath: assets/parts-images/JST-XH-4A-F.png
+  downloadPath: assets/parts-files/JST-XH-4A-F.fzpz
+  isExternal: false
+  sourceName: MatsRobot
+  sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
+  
 - id: MT6701_Module
   title: MT6701 Magnetic Angle Encoder
   description: "The MT6701 is a high-precision 14-bit magnetic angle encoder based on differential Hall induction technology, designed to measure absolute rotation from 0° to 360°."
