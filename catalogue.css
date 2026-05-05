@@ -218,39 +218,60 @@ body {
 /* --- MOBILE VIEW (Vertical Card Layout) --- */
 @media (max-width: 600px) {
     #catalogue-container {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem; /* Larger gap between different parts */
         padding: 0 1rem;
     }
 
     .catalogue-card {
         display: flex;
         flex-direction: column;
-        padding: 15px;
+        padding: 1.25rem;
         border: 1px solid var(--gh-border);
         border-radius: 8px;
-        margin-bottom: 0.5rem;
+        /* Subtle background tint to define the card area */
+        background-color: #fafbfc; 
+        box-shadow: 0 1px 3px rgba(27,31,35,0.04);
+    }
+
+    /* We use 'order' to reshuffle the elements visually */
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-section {
+        order: 1; /* Move Title/Source to the top */
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
     .card-image {
-        border-bottom: 1px solid var(--gh-border);
-        margin-bottom: 15px;
-        padding-bottom: 15px;
+        order: 2; /* Move Image to the middle */
+        border: none;
+        padding: 0;
+        margin-bottom: 1rem;
         text-align: center;
+    }
+
+    .description-text {
+        order: 3; /* Move Description under Image */
+        margin: 0.5rem 0 1rem 0;
+        font-size: 0.9rem;
+        color: var(--gh-text-muted);
+        text-align: left;
+    }
+
+    .btn-download {
+        order: 4; /* Place Download at the very bottom of the card */
+        width: 100%;
+        padding: 10px;
     }
 
     .card-image img {
         max-width: 80%;
-        max-height: 180px;
-        margin-bottom: 10px;
-    }
-
-    .btn-download {
-        width: 80%;
-    }
-
-    .main-header h1 {
-        font-size: 1.8rem;
+        max-height: 160px;
     }
 }
 
