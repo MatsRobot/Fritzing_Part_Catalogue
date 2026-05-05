@@ -14,10 +14,10 @@
 /* --- MAIN LAYOUT --- */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    color: var(--gh-dark);      /* FIXED: Changed from --gh-text to --gh-dark */
+    color: var(--gh-dark);      
     line-height: 1.5;
     margin: 0;
-    padding: 0;                 /* Changed to 0 to manage spacing via containers */
+    padding: 0;                 
     background-color: #ffffff;
 }
 
@@ -55,33 +55,13 @@ body {
 }
 
 .main-header p {
-    color: var(--gh-blue);      /* Mat's Robot Blue sub-header */
+    color: var(--gh-blue);      
     font-size: 1.1rem;
     font-weight: 500;
     margin-top: 0;
 }
 
 /* --- SEARCH SECTION --- */
-.search-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    fill: #586069;
-    z-index: 1;
-}
-
-/* Mobile responsiveness for the grid */
-@media (max-width: 600px) {
-    #catalogue-container {
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
-    }
-    .main-header h1 {
-        font-size: 1.8rem;
-    }
-}
-
 .search-section {
     max-width: 950px;
     margin: 0 auto 2rem auto;
@@ -94,6 +74,15 @@ body {
     position: relative;
     width: 100%;
     max-width: 500px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #586069;
+    z-index: 1;
 }
 
 #part-search {
@@ -114,104 +103,140 @@ body {
     box-shadow: 0 0 0 3px rgba(3,102,214,0.3);
 }
 
+/* --- GLOBAL BUTTON STYLES (Fixed to work everywhere) --- */
+.btn-download {
+    display: inline-block; /* Essential for padding/background to show */
+    background-color: var(--gh-green) !important;
+    color: #ffffff !important;
+    padding: 8px 12px;
+    text-decoration: none !important;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-align: center;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    background-color: var(--gh-green-hover) !important;
+}
+
+.btn-external {
+    background-color: var(--gh-blue) !important;
+}
+
 /* --- THE GRID CONTAINER (List Layout) --- */
 #catalogue-container {
     display: flex;
-    flex-direction: column; /* Stack parts vertically */
-    gap: 0.75rem;           /* Tighter spacing between rows */
+    flex-direction: column; 
+    gap: 0.75rem;           
     max-width: 950px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* --- THE CARD STYLE (Compact Desktop Row) --- */
+/* --- DESKTOP VIEW (Horizontal List Layout) --- */
 @media (min-width: 601px) {
     .catalogue-card {
         display: grid;
-        /* Increased first column to 150px for better image fit */
-        grid-template-columns: 150px 200px 1fr; 
+        /* Column 1: 160px for image/btn, Column 2: 220px for title, Column 3: rest for desc */
+        grid-template-columns: 160px 220px 1fr; 
         align-items: center;
         border: 1px solid var(--gh-border);
         border-radius: 6px;
         background: #fff;
-        padding: 15px; /* Added more padding for breathing room */
+        padding: 15px; 
         gap: 20px;
     }
 
-	.card-image {
+    .card-image {
         border-right: 1px solid var(--gh-border);
         padding-right: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        width: 100%; /* Ensure it uses the full 150px */
+        width: 100%; 
     }
 
-	.card-image img {
-        max-width: 100%; /* Prevent image from spilling out */
+    .card-image img {
+        max-width: 100%; 
         height: auto;
-        max-height: 80px; /* Increased slightly from 60px */
+        max-height: 90px; 
         margin-bottom: 12px;
         object-fit: contain;
     }
 
+    .btn-download {
+        width: 100%; /* In list mode, button fills the image column width[cite: 8, 9] */
+        box-sizing: border-box;
+    }
+
     .card-content {
-        display: contents; /* Allows children to sit in the grid defined above */
+        display: contents; /* Directs children into the parent grid columns */
     }
 
     .card-content h3 {
-        grid-column: 2; /* Put title in second column */
+        grid-column: 2; 
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        color: var(--gh-blue) !important;
     }
 
     .source-credit {
-        grid-column: 2; /* Put source under title */
+        grid-column: 2; 
         margin: 4px 0 0 0;
+        font-size: 0.8rem;
     }
 
     .card-content p {
-        grid-column: 3; /* Put description in the final large column */
+        grid-column: 3; 
         margin: 0;
         padding-left: 20px;
         border-left: 1px solid var(--gh-border);
-        flex-grow: 0;
-    }
-
-	.btn-download {
-        display: inline-block; /* Essential for padding to work */
-        background-color: var(--gh-green) !important;
-        color: #ffffff !important;
-        padding: 6px 12px;
-        text-decoration: none !important;
-        border-radius: 6px;
-        font-weight: 600;
-        font-size: 0.8rem;
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-        border: 1px solid rgba(27, 31, 35, 0.15);
-    }
-	
-	.btn-external {
-        background-color: var(--gh-blue) !important;
+        font-size: 0.9rem;
     }
 }
 
-/* --- MOBILE VIEW (Remains Unchanged) --- */
+/* --- MOBILE VIEW (Vertical Card Layout) --- */
 @media (max-width: 600px) {
     #catalogue-container {
         display: grid;
         grid-template-columns: 1fr;
+        padding: 0 1rem;
     }
+
     .catalogue-card {
+        display: flex;
         flex-direction: column;
+        padding: 15px;
+        border: 1px solid var(--gh-border);
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
     }
-    /* ... existing mobile styles ... */
+
+    .card-image {
+        border-bottom: 1px solid var(--gh-border);
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .card-image img {
+        max-width: 100%;
+        max-height: 180px;
+        margin-bottom: 10px;
+    }
+
+    .btn-download {
+        width: 100%;
+    }
+
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
 }
-
-
 
 /* --- FOOTER --- */
 footer {
