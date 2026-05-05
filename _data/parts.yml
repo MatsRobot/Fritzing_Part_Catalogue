@@ -151,3 +151,12 @@
   sourceName: "adafruit/Fritzing-Library"
   sourceUrl: "https://github.com/adafruit/Fritzing-Library/tree/master/parts"
   
+- id: LCD2004-I2C
+  title: 4-line character LCD module LCD2004 I2C
+  description: "The LCD2004 I2C is a 20-character by 4-line character LCD module that uses an I2C interface adapter (typically containing a PCF8574 chip) to reduce wiring requirements to just two data lines (SDA and SCL) plus power.  It operates on 5V power and is compatible with microcontrollers."
+  imagePath: assets/parts-images/LCD2004-I2C.png
+  downloadPath: "https://forum.fritzing.org/uploads/default/original/2X/3/396ac45a9caa834358c9439a959ef2a6203c7a2d.fzpz"
+  isExternal: true
+  sourceName: "forum.fritzing.org"
+  sourceUrl: "https://forum.fritzing.org/t/20x4-lcd-display-with-integrated-i2c-based-on-lcd1602-i2c-by-stephen-lilley/6814/6"
+  
