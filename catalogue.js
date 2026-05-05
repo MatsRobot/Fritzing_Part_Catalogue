@@ -1,26 +1,31 @@
+---
+---
 document.addEventListener('DOMContentLoaded', function() {
     const container = document.getElementById('catalogue-container');
     const searchInput = document.getElementById('part-search');
-    let allParts = []; // Global store for the search filter
 
-    // 1. Fetch data from your parts.json database
-    fetch('parts.json')
-        .then(response => response.json())
-        .then(data => {
-            // Sort alphabetically by title immediately on load
-            allParts = data.sort((a, b) => a.title.localeCompare(b.title));
-            renderParts(allParts);
-        })
-        .catch(error => {
-            console.error('Error loading JSON:', error);
-            container.innerHTML = `
-                <div class="note" style="border-color: #d73a49; background-color: #ffeef0;">
-                    Error loading catalogue data. Please ensure parts.json exists and is formatted correctly.
-                </div>`;
-        });
+    // 1. Inject YAML data directly via Jekyll Liquid tags
+    // This turns your YAML file into a native JavaScript array during the build process.
+    let allParts = [
+        {% for part in site.data.parts %}
+        {
+            id: "{{ part.id }}",
+            title: "{{ part.title }}",
+            description: "{{ part.description | replace: '"', '\"' }}",
+            imagePath: "{{ part.imagePath }}",
+            downloadPath: "{{ part.downloadPath }}",
+            isExternal: {{ part.isExternal | default: false }},
+            sourceName: "{{ part.sourceName }}",
+            sourceUrl: "{{ part.sourceUrl }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+
+    // Initial sort alphabetically by title
+    allParts.sort((a, b) => a.title.localeCompare(b.title));
+    renderParts(allParts);
 
     // 2. Real-time Search Logic
-    // Triggers every time a character is typed in the search box
     searchInput.addEventListener('input', (e) => {
         const searchTerm = e.target.value.toLowerCase().trim();
         
@@ -39,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // 4. Drawing function to render the 3-column grid
+    // 4. Drawing function to render the grid
     function renderParts(partsList) {
         container.innerHTML = '';
 
@@ -52,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         partsList.forEach(part => {
-            // Determine the source credit line based on whether it is an external part
             const sourceCredit = part.isExternal 
                 ? `<p class="source-credit">Source: <a href="${part.sourceUrl}" target="_blank">${part.sourceName}</a></p>` 
                 : `<p class="source-credit">Source: MatsRobot</p>`;
@@ -71,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
                        download>
                        Download .fzpz
                     </a>
-                        
                     </div>
                 </div>`;
             
@@ -79,4 +82,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-

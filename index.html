@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +18,8 @@
     <h1>🛠️ Fritzing Component Catalogue</h1>
     <p>A library of open-source Fritzing parts (.fzpz) created or verified by MatsRobot.</p>
     
-    <!-- This now matches the Mat's Robot Yellow Mission Statement style -->
     <div class="note">
-        <strong>How to Use:</strong> Locate the component you need. Use the search bar to filter by name or description. Use the green <strong>"Download"</strong> button to get the <code>.fzpz</code> file directly.
+        <strong>How to Use:</strong> Locate the component you need. Use the search bar to filter by name or description. Use the green <strong>"Download"</strong> button to get the <code>.fzpz</code> file directly.[cite: 4]
     </div>
 </header>
 
@@ -27,6 +28,16 @@
             <svg class="search-icon" width="16" height="16" viewBox="0 0 16 16"><path d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 011.5 7zm5.13 8.13l-3.38-3.38a6.5 6.5 0 10-1.414 1.414l3.38 3.38z"/></svg>
             <input type="text" id="part-search" placeholder="Search components (e.g., 'Wiper', 'VL53L1X')..." autocomplete="off">
         </div>
+    </div>
+
+    <!-- This is what Googlebot will index -->
+    <div id="seo-index" style="display:none;" aria-hidden="true">
+        {% for part in site.data.parts %}
+        <article>
+            <h2>{{ part.title }}</h2>
+            <p>{{ part.description }}</p>
+        </article>
+        {% endfor %}
     </div>
 
     <main id="catalogue-container"></main>
