@@ -168,4 +168,12 @@
   isExternal: true
   sourceName: "forum.fritzing.org"
   sourceUrl: "https://forum.fritzing.org/t/search-tja1050-shield/28929"
-    
+  
+- id: Niren_can_bus_module
+  title: MCP2515 CAN Bus Niren Module
+  description: "The NiRen MCP2515_CAN is a low-cost CAN bus interface module designed primarily for 5V microcontrollers also compatible with 3.3V devices when powered at 3.3V.  It integrates the MCP2515 CAN controller and the TJA1050 CAN transceiver, connecting to the host microcontroller via the SPI interface for efficient data transmission."
+  imagePath: assets/parts-images/Niren_can_bus_module.png
+  downloadPath: "https://forum.fritzing.org/uploads/default/original/2X/f/feeb0253cb511325b28628d01d2cd8b1e016c648.fzpz"
+  isExternal: true
+  sourceName: "forum.fritzing.org"
+  sourceUrl: "https://forum.fritzing.org/t/part-creation-for-can-module-niren/6017/3"    
