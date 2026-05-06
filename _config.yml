@@ -1,0 +1,7 @@
+# Site Settings
+url: "https://matsrobot.github.io"
+baseurl: "/Fritzing_Part_Catalogue"
+
+# Plugins
+plugins:
+  - jekyll-sitemap
