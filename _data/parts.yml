@@ -117,7 +117,7 @@
 
 - id: Heltec-WiFi-Kit-8
   title: Heltec WiFi Kit 8
-  description: "WiFi Kit 8 is a classic IoT dev-board designed & produced by Heltec Automation(TM), it’s a highly integrated product based on ESP8266 (Wi-Fi), Li-Po battery management system, 0.91″ OLED is also included."
+  description: "WiFi Kit 8 is a classic IoT dev-board designed & produced by Heltec Automation(TM), it’s a highly integrated product based on ESP8266 (Wi-Fi), Li-Po battery management system, (0.91") OLED is also included."
   imagePath: assets/parts-images/Heltec-WiFi-Kit-8.png
   downloadPath: "https://digitalconcepts.net.au/fritzing/content/support/parts/Heltec%20WiFi%20Kit%208.fzpz"
   isExternal: true
@@ -164,7 +164,7 @@
   title: ACS712 Current Sensor 5A 20A 30A
   description: "The ACS712 is a fully integrated, Hall-effect-based linear current sensor IC  designed for economical and precise AC or DC current sensing in industrial, commercial, and communications systems."
   imagePath: assets/parts-images/ACS712_Current_Sensor_5A_20A_30A.png
-  downloadPath: "https://github.com/ramjipatel041/Fritzing-Modules/raw/main/INA219%20Module%20CJMCU.fzpz"
+  downloadPath: "https://forum.fritzing.org/uploads/short-url/pFW6CL8MPjEnvzfV3EynSFIpYBf.fzpz"
   isExternal: true
   sourceName: "forum.fritzing.org"
   sourceUrl: "https://forum.fritzing.org/t/current-sensor-5a-acs712/7694/3"
