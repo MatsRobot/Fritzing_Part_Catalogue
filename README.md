@@ -10,7 +10,7 @@ A curated collection of high-quality, verified Fritzing components optimized for
       <h2>🚀 The Purpose</h2>
     </td>
     <td width="50%" align="center" valign="middle">
-      <img src="https://github.com/user-attachments/assets/1c865b8d-d03e-4994-b2b1-2320f37c6ebe" alt="Catalogue Preview" width="150" style="border-radius: 8px;" />
+      <img src="https://github.com/user-attachments/assets/cd0f5f6f-d517-41c1-abda-e4bd410b75ce" alt="Catalogue Preview" width="150" style="border-radius: 8px;" />
     </td>
   </tr>
   <tr>
