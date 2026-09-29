@@ -268,7 +268,7 @@
   sourceName: "KAST Tech"
   sourceUrl: "https://github.com/KAST-Tech/fritzing-parts"  
 
-  - id: KSD301_Thermal_Switch
+- id: KSD301_Thermal_Switch
   title: KSD301 Thermal Switch
   description: "Thermal Cut-off switch KSD301."
   imagePath: assets/parts-images/KSD301_Thermal_Switch.png
@@ -277,7 +277,7 @@
   sourceName: MatsRobot
   sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
   
-  - id: Speed_Switch
+- id: Speed_Switch
   title: Speed Switch
   description: "Speed controller switch used for andgle grinders, drills etc."
   imagePath: assets/parts-images/Speed_Switch.png
