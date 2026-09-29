@@ -276,10 +276,10 @@
   isExternal: false
   sourceName: MatsRobot
   sourceUrl: "https://matsrobot.github.io/Fritzing_Part_Catalogue/"
-  
+
 - id: Speed_Switch
   title: Speed Switch
-  description: "Speed controller switch used for andgle grinders, drills etc."
+  description: "Speed controller switch used for angle grinders, drills etc."
   imagePath: assets/parts-images/Speed_Switch.png
   downloadPath: assets/parts-files/Speed_Switch.fzpz
   isExternal: false
